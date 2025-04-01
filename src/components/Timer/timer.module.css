@@ -1,0 +1,75 @@
+.timerContainer {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    animation: fade-in 1s ease-in-out;
+    overflow: hidden;
+}
+
+.contentTimeInputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    margin-bottom: 2em;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--secondary-text-color);
+}
+
+.contentTimeInputs input {
+    width: 50px;
+    height: 55px;
+    border-radius: 8px;
+    border: var(--border-color) 1px solid;
+    outline: none;
+    background-color: var(--input-background-color);
+    text-align: center;
+    appearance: none;
+    color: var(--input-text-color);
+}
+
+.contentTimeInputs input:focus {
+    outline: 2px solid var(--border-color-active);
+    border: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.timerIcon {
+    background-color: var(--tertiary-background-color);
+    border-radius: 10px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+  
+.timerIcon .icon {
+    stroke: var(--icon-color);
+}
+
+.timerGif {
+    width: 14em;
+    height: 14em;
+    object-fit: contain;
+    padding: .5em;
+}
+
+.timerButtons {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-block: 24px;
+}

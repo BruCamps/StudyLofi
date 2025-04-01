@@ -1,0 +1,63 @@
+.contentPomodoro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--tertiary-background-color);
+    top: 0;
+    height: 375px;
+    width: 100%;
+}
+  
+.contentPomodoro .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+  
+.contentPomodoro .content img {
+    width: 250px;
+    animation: fade-in 1s ease-in-out;
+}
+
+/* Modal Timer */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+}
+
+.modalContent {
+    background-color: var(--tertiary-background-color);
+    padding: 20px;
+    border-radius: 25px;
+    min-width: 400px;
+}
+
+.modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.btnClose {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btnClose .icon {
+    stroke: var(--icon-active-color);
+}

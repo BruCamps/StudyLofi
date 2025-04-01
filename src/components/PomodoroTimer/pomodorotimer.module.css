@@ -1,0 +1,131 @@
+.shadowTimerContainer {
+    background-color: var(--secondary-background-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 395px;
+    height: 555px;
+    margin-left: 5em;
+    animation: fade-in 1s ease-in-out;
+}
+
+.timerContainer {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-background-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.timerCircleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-background-color);
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    position: relative;
+}
+
+.timerTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.progressCircle {
+  stroke: var(--secondary-background-color);
+  transition: stroke-dashoffset 0.4s ease-in-out;
+  fill: none;
+  stroke-width: 5;
+  cx: 60;
+  cy: 60;
+}
+
+.progressBar {
+    stroke: var(--primary-color);
+    transition: stroke-dashoffset 0.4s ease-in-out;
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    cx: 60;
+    cy: 60;
+}
+
+.contentSteps {
+    display: flex;
+    gap: .4em;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-block: 1.5em 1em;
+}
+
+.step {
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+    padding: .6em;
+    color: var(--secondary-text-color);
+}
+  
+.step.active {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+.step.active .icon {
+    stroke: white;
+}
+
+.break {
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+    padding: .2em .5em;
+    color: var(--secondary-text-color);
+}
+
+.break.active {
+    background-color: var(--primary-color);
+}
+
+.contentStep {
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8em 1.5em;
+}
+  
+.contentStep.active {
+    outline: 3px solid var(--primary-color);
+    outline-offset: -3px;
+}
+
+.contentStep.active > .icon {
+    stroke: var(--primary-color);
+}
+
+.contentStep > .icon {
+    width: 32px;
+    height: 32px;
+    stroke: var(--icon-pomodoro-color);
+}
+  
+.contentBtns {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    min-width: 240px;
+    margin-top: 20px;
+}
