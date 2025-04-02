@@ -45,18 +45,7 @@ const Timer = () => {
 
   return (
     <div className={styles.timerContainer}>
-      <ModalTime
-        isOpen={isModalOpen}
-        setOpen={() => setIsModalOpen((prev) => !prev)}
-        title="Meta de estudo"
-      >
-        <Text.H3>Digite o tempo que pretende estudar</Text.H3>
-        <div className={styles.contentTimeInputs}>
-          <input type="text" placeholder="00" />:
-          <input type="text" placeholder="00" />:
-          <input type="text" placeholder="00" />
-        </div>
-      </ModalTime>
+      <ModalTime isOpen={isModalOpen} setOpen={() => setIsModalOpen((prev) => !prev)} title="Meta de estudo" />
       <div className={styles.header}>
         <Text.H1>Timer</Text.H1>
         <Button id="timer-button-icon" className={styles.timerIcon} onClick={() => setIsModalOpen((prev) => !prev)}>

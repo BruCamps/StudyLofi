@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 import Text from '../Text/Text';
 import styles from './modals.module.css';
 
-export default function ModalTime({ isOpen, setOpen, title, children }) {
+export default function ModalTime({ isOpen, setOpen, title }) {
   
     if(!isOpen) return null;
 
@@ -21,7 +21,12 @@ export default function ModalTime({ isOpen, setOpen, title, children }) {
                                 </Button>
                             </div>
                             <>
-                                {children}  
+                                <Text.H3>Digite o tempo que pretende estudar</Text.H3>
+                                <div className={styles.contentTimeInputs}>
+                                    <input type="number" placeholder="00"   />:
+                                    <input type="number" placeholder="00" />:
+                                    <input type="number" placeholder="00" />
+                                </div> 
                                 <Button fullWidth>
                                     Definir
                                 </Button>
