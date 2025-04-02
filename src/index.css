@@ -1,10 +1,12 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  font-display: swap;
   line-height: normal;
 }
 
@@ -30,6 +32,7 @@
   --primary-color: #FE5163;
   --primary-color-hover: #ff6070;
 }
+
 [data-theme='green-dark'] {
   --primary-background-color: #07010e;
   --secondary-background-color: #0F0F22;
@@ -52,6 +55,7 @@
   --primary-color: #1b9b7a;
   --primary-color-hover: #2aa889;
 }
+
 [data-theme='bege-light'] {
   --primary-background-color: #FCF6D7;
   --secondary-background-color: rgb(248, 220, 176);
@@ -60,7 +64,7 @@
   --timer-circle-color: rgb(226, 158, 95);
 
   --primary-text-color: rgb(116, 65, 18);
-  --secondary-text-color: rgb(179, 115, 56);
+  --secondary-text-color: rgb(196, 140, 89);
 
   --icon-pomodoro-color: rgba(179, 115, 56, 0.712);
   --icon-color: rgb(179, 115, 56);
@@ -80,30 +84,17 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 3em;
   padding-inline: 2em;
 }
 
 .theme-container {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 32px;
+  right: 32px;
   cursor: pointer;
   display: flex;
   gap: .2em;
-}
-
-/* Animações */
-
-@keyframes fade-in {
-  0% {
-    transform: translateY(-35px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }

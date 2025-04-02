@@ -2,15 +2,16 @@
     background-color: var(--secondary-background-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 350px;
+    height: 550px;
     text-align: center;
     padding: 20px;
     border-radius: 20px;
     position: relative;
     animation: fade-in 1s ease-in-out;
     overflow: hidden;
+    gap: 2.2em;
 }
 
 .contentTimeInputs {
@@ -18,16 +19,17 @@
     justify-content: center;
     align-items: center;
     gap: .5em;
-    margin-bottom: 2em;
     font-weight: 500;
-    font-size: 18px;
     color: var(--secondary-text-color);
+    margin-block: 1em;
+    font-size: 18px;
 }
 
 .contentTimeInputs input {
     width: 50px;
     height: 55px;
     border-radius: 8px;
+    font-size: 18px;
     border: var(--border-color) 1px solid;
     outline: none;
     background-color: var(--input-background-color);
@@ -61,15 +63,16 @@
 }
 
 .timerGif {
-    width: 14em;
-    height: 14em;
-    object-fit: contain;
-    padding: .5em;
+    width: 15em;
+    height: 15em;
 }
 
 .timerButtons {
     display: flex;
     align-items: center;
     gap: 1em;
-    margin-block: 24px;
+}
+
+.timerButtons .icon {
+    stroke: var(--secondary-text-color);
 }

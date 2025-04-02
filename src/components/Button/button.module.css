@@ -14,6 +14,13 @@
     background-color: var(--primary-color-hover);
 }
 
+.btn:not(.reset):active,
+.btn:not(.reset):focus {
+    outline: var(--primary-color-hover) 1px solid;
+    outline-offset: 2px;
+    background-color: var(--primary-color-hover);
+}
+
 .btn-play {
     width: 48px;
     height: 48px;
@@ -34,17 +41,17 @@
 
 #theme-pink-dark {
     background: linear-gradient(-45deg, #0F0F22 50%, #FE5163 50%);
-    border: #FE5163 2px solid;
-  }
+    border: #FE5163 3px solid;
+}
   
 #theme-green-dark {
     background: linear-gradient(-45deg, #0F0F22 50%, #1b9b7a 50%);
-    border: #1b9b7a 2px solid;
+    border: #1b9b7a 3px solid;
 }
 
 #theme-bege-light {
     background: linear-gradient(-45deg, #c26f40 50%, rgb(240, 210, 163) 50%);
-    border: rgb(240, 210, 163) 2px solid;
+    border: rgb(240, 210, 163) 3px solid;
 }
 
 #theme-green-dark,

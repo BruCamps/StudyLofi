@@ -23,6 +23,10 @@
     animation: fade-in 1s ease-in-out;
 }
 
+.contentPomodoro .content h4 {
+    animation: fade-in 1s ease-in-out;
+}
+
 /* Modal Timer */
 
 .modal {
@@ -60,4 +64,17 @@
 
 .btnClose .icon {
     stroke: var(--icon-active-color);
+}
+
+/* Animações */
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(-35px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

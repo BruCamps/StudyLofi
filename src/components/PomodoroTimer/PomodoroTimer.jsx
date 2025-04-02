@@ -78,11 +78,10 @@ export default function PomodoroTimer() {
         }
         return prevTime - 1;
       });
-    }, 1000);
+    }, 5);
 
     return () => clearInterval(interval);
   }, [isPaused, currentStep]);
-
 
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
@@ -98,7 +97,7 @@ export default function PomodoroTimer() {
               {`${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`}
             </Text.SPAN>
             <Text.P>
-              {currentStep % 2 === 0 ? 'Study Time' : (currentStep === 7 ? 'Long Break' : 'Break Time')}
+              {currentStep % 2 === 0 ? 'Focus Time' : (currentStep === 7 ? 'Long Break' : 'Break Time')}
             </Text.P>
           </div>
           <svg width="100%" height="100%" viewBox="0 0 120 120">
@@ -148,8 +147,8 @@ export default function PomodoroTimer() {
             onClick={() => {
               if (isOpen) {
                 setIsOpen(false);
-                document.querySelectorAll(`${styles.step}, ${styles.break}`).forEach((step) => {
-                  if (step !== document.querySelector(`${styles.step}:nth-child(1)`)) {
+                document.querySelectorAll(`.${styles.step}, .${styles.break}`).forEach((step) => {
+                  if (step !== document.querySelector(`.${styles.step}:nth-child(1)`)) {
                     step.classList.remove(`${styles.active}`);
                   }
                 });
