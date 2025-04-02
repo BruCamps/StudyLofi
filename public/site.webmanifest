@@ -1,10 +1,9 @@
 {
-    "name": "Pomofi",
-    "short_name": "Pomofi",
+    "name": "react-demo",
+    "short_name": "react-demo",
     "description": "A pomodoro app with lofi theme for your study time",
-    "icons": [],
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff",
-    "start_url": "https://brucamps.github.io/StudyLofi/"
+    "start_url": "https://BruCamps.github.io/StudyLofi/"
 }
