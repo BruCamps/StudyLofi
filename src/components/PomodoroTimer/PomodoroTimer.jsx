@@ -78,7 +78,7 @@ export default function PomodoroTimer() {
         }
         return prevTime - 1;
       });
-    }, 5);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [isPaused, currentStep]);
