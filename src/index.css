@@ -18,7 +18,7 @@
   --timer-circle-color: #0F0F22;
 
   --primary-text-color: white;
-  --secondary-text-color: slategray;
+  --secondary-text-color: #97A8BA;
   
   --icon-pomodoro-color: #33354e;
   --icon-color: #ccccd3;
@@ -27,7 +27,10 @@
   --border-color: transparent;
   --border-color-active: #FE5163;
   --input-background-color: #33354e;
-  --input-text-color: white;
+  --input-active-background-color: #9f3d46a8;
+  --input-text-color: #ff6171;
+  --btn-close-bg: #33354e;
+  --bg-modal: #1f2034;
 
   --primary-color: #FE5163;
   --primary-color-hover: #ff6070;
@@ -41,7 +44,7 @@
   --timer-circle-color: #0F0F22;
 
   --primary-text-color: white;
-  --secondary-text-color: slategray;
+  --secondary-text-color: #97A8BA;
   
   --icon-pomodoro-color: #33354e;
   --icon-color: #ccccd3;
@@ -50,9 +53,12 @@
   --border-color: transparent;
   --border-color-active: #1b9b7a;
   --input-background-color: #33354e;
-  --input-text-color: white;
+  --input-active-background-color: #228970a8;
+  --input-text-color: #43fecd;
+  --btn-close-bg: #33354e;
+  --bg-modal: #1f2034;
 
-  --primary-color: #1b9b7a;
+  --primary-color: #1B9C7A;
   --primary-color-hover: #2aa889;
 }
 
@@ -72,8 +78,11 @@
 
   --border-color: transparent;
   --border-color-active: rgb(211, 147, 86);
-  --input-background-color: rgb(248, 220, 176);
-  --input-text-color: rgb(184, 102, 27);
+  --input-background-color: rgb(243, 219, 179);
+  --input-active-background-color: rgb(255 217 155 / 84%);
+  --input-text-color: rgb(221, 132, 50);
+  --btn-close-bg: rgb(249, 221, 174);
+  --bg-modal: rgb(255, 235, 202);
   
   --primary-color: #c26f40;
   --primary-color-hover: #da8351;

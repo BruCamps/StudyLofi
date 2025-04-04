@@ -9,7 +9,7 @@ import Text from '../Text/Text';
 const Timer = () => {
   const [elapsedTime, setElapsedTime] = useState(0);
   const [isTimerPaused, setIsTimerPaused] = useState(true);
-  const [selectedGif, setSelectedGif] = useState(gifBreak[4]);
+  const [selectedGif, setSelectedGif] = useState(gifBreak[0]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const updateElapsedTime = useCallback(() => {
@@ -48,24 +48,24 @@ const Timer = () => {
       <ModalTime isOpen={isModalOpen} setOpen={() => setIsModalOpen((prev) => !prev)} title="Meta de estudo" />
       <div className={styles.header}>
         <Text.H1>Timer</Text.H1>
-        <Button id="timer-button-icon" className={styles.timerIcon} onClick={() => setIsModalOpen((prev) => !prev)}>
+        <Button id="timer-button-icon" aria-label="Timer Button" className={styles.timerIcon} onClick={() => setIsModalOpen((prev) => !prev)}>
           <Lucide.AlarmClock className={styles.icon} width={30} height={30} />
         </Button>
       </div>
-      <img id="timer-gif" className={styles.timerGif} src={selectedGif} width='300' height='300' fetchPriority="high" alt="Animated gif of Lofi Girl" />
+      <img id="timer-gif" className={styles.timerGif} src={selectedGif} fetchPriority="high" alt="Animated gif of Lofi Girl" />
       <Text.H2>
         {formatTime(hours)}:{formatTime(minutes)}:{formatTime(seconds)}
       </Text.H2>
       <div className={styles.timerButtons}>
-        <Button id="reset-button-icon" variant="reset" onClick={resetTimer}>
+        <Button id="reset-button-icon" aria-label="Timer Reset Button" variant="reset" onClick={resetTimer}>
           <Lucide.RotateCcw className={styles.icon} width={28} height={28} />
         </Button>
-        <Button id="play-button-icon" variant="btn-play" onClick={toggleTimer}>
+        <Button id="play-button-icon" aria-label="Timer Play Button" variant="btn-play" onClick={toggleTimer}>
           {isTimerPaused ? (<Lucide.Play fill="white" color="white" width={24} height={24} />) : (
             <Lucide.Pause fill="white" color="transparent" width={28} height={28} />
           )}
         </Button>
-        <Button id="music-button-icon" variant="reset">
+        <Button id="music-button-icon" aria-label="Timer Music Button" variant="reset">
           <Lucide.Music className={styles.icon} width={28} height={28} />
         </Button>
       </div>

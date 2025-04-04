@@ -143,6 +143,7 @@ export default function PomodoroTimer() {
 
         <div className={styles.contentBtns}>
           <Button
+            aria-label="start pomodoro"
             fullWidth
             onClick={() => {
               if (isOpen) {
@@ -168,6 +169,7 @@ export default function PomodoroTimer() {
 
           {((isPaused || timeLeft === 0) && !isOpen) && (
             <Button
+              aria-label="reset pomodoro"
               fullWidth
               variant='reset'
               onClick={() => {

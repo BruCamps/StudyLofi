@@ -19,7 +19,8 @@
 }
   
 .contentPomodoro .content img {
-    width: 250px;
+    width: 15.625em;
+    height: 15.625em;
     animation: fade-in 1s ease-in-out;
 }
 
@@ -44,7 +45,7 @@
 }
 
 .modalContent {
-    background-color: var(--tertiary-background-color);
+    background-color: var(--bg-modal);
     padding: 20px;
     border-radius: 25px;
     min-width: 400px;
@@ -59,11 +60,75 @@
 
 .btnClose {
     cursor: pointer;
-    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+    border-radius: 10px;
+    background-color: var(--btn-close-bg);
+}
+    
+.btnClose .icon {
+    stroke: var(--icon-color);
 }
 
-.btnClose .icon {
-    stroke: var(--icon-active-color);
+.contentTimeInputs {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    margin-block: 1.5em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contentTimeInputs .inputTime:placeholder-shown,
+.contentTimeInputs .inputTime::placeholder {
+    color: var(--secondary-text-color);
+    background-color: var(--input-background-color);
+}
+
+.contentTimeInputs .contentInput {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.contentTimeInputs span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    height: 55px;
+    color: var(--secondary-text-color);
+}
+
+.contentTimeInputs .inputTime {
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 32px;
+    border: var(--border-color) 1px solid;
+    outline: none;
+    text-align: center;
+    appearance: none;
+    color: var(--input-text-color);
+    background-color: var(--input-active-background-color);
+}
+
+.contentTimeInputs .inputTime:focus {
+    outline: 2px solid var(--border-color-active);
+    border: none;
+}
+
+.contentTimeInputs .contentInput p {
+    font-size: 14px;
+    color: var(--secondary-text-color);
 }
 
 /* Animações */
