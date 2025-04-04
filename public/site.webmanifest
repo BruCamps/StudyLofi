@@ -1,0 +1,27 @@
+{
+    "name": "Pomofi",
+    "short_name": "Pomofi",
+    "description": "A simple app for study with a pomodoro timer and stopwatch",
+    "theme_color": "#07010e",
+    "background_color": "#07010e",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/StudyLofi/android-icon-144x144.png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/StudyLofi/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/StudyLofi/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

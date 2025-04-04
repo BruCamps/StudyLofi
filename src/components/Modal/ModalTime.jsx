@@ -15,7 +15,7 @@ export default function ModalTime({ isOpen, setOpen, title }) {
                     <div className={styles.modal}>
                         <div className={styles.modalContent}>
                             <div className={styles.modalHeader}>
-                                <Text.H1>{title}</Text.H1>
+                                <Text.H1 className={styles.modalTitle}>{title}</Text.H1>
                                 <Button id="close-modal-button" aria-label="close" className={styles.btnClose} onClick={setOpen}>
                                     <Lucide.X className={styles.icon} />
                                 </Button>
